@@ -1,0 +1,131 @@
+/* Estilo de Contato */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 50px;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Informações de contato e mapa empilhados */
+.contact-info-map {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.contact-info {
+    background-color: #d4c6b6 ;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-methods p {
+    margin-bottom: 10px;
+}
+
+.contact-methods a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-methods a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    background-color: #d4c6b6 ;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.map-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.map-container iframe {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Formulário de Contato separado */
+.contact-form {
+    width: 40%;
+    background-color: #d4c6b6 ;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+}
+
+.contact-form h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info-map, .contact-form {
+        width: 100%;
+    }
+}
